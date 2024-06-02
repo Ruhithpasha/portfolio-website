@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html.body {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  /* background-color: cyan;
+   */
+   background-image: url(https://images.unsplash.com/photo-1460794418188-1bb7dba2720d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#to-do {
+  width: 100%;
+  max-width: 540px;
+  background-color: #efeded;
+  margin: 30px auto 20px;
+  padding: 40px 30px 23px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+#to-do h2 {
+  font-size: 30px;
+  display: flex;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  align-items: center;
+  color: rgb(16, 13, 13);
+  font-family: "Roboto Slab", serif;
+}
+
+#to-do  h2 img {
+  height: 50x;
+  width: 50px;
+  margin-left: 5px;
+}
+
+#row {
+  display: flex;
+  /* height: 40px; */
+  width: 100%;
+  background-color:#eae5e5;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  position: relative;
+}
+input {
+  /* width: 100%; */
+  flex: 1;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background: transparent;
+  /* position: absolute; */
+  margin-left: 10px;
+  /* margin-bottom: 25px; */
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 12px 30px;
+  background-color: #504a4a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  margin-top: 10px;
+  padding: 16px 8px 12px 50px;
+  /* margin-left: 20px; */
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: black;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-image: url(images/checkbox-blank-line.png);
+  background-size: cover;
+  background-position: center;
+  height: 28px;
+  width: 28px;
+  /* filter: invert(1); */
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  color: black;
+
+}
+
+
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+  background-image: url(images/checkbox-line.png);
+}
+
+
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  /* color: #555; */
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover{
+     background: #edeef0;
+}
+
+

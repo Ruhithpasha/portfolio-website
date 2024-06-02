@@ -1,0 +1,129 @@
+.border {
+  border: 2px solid red;
+  margin: 3px;
+}
+
+.flex {
+  display: flex;
+}
+
+justify-center {
+  justify-content: center;
+}
+
+items-center {
+  align-items: center;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+.bg-grey {
+  background: #121212;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.rounded {
+  border-radius: 7px;
+}
+
+.home-logos {
+  width: 26px;
+}
+
+.p1{
+    padding: 10px;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Adjust width as needed */
+  height: 40px; /* Adjust height as needed */
+  border-radius: 50%; /* Makes the border rounded */
+  background-color: rgb(27, 209, 27);
+  position: absolute;
+  right: 17px;
+  top: 168px;
+  /* opacity: 0; */
+  transition: all 1s ease-out;
+  /* fill: #121212; */
+  /* filter: invert(1); */
+  
+}
+.play1{
+  /* fill: #121212; */
+  margin-bottom: 5px;
+  filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Webkit browsers (Chrome, Safari, etc.) */
+/* The following CSS will style the scrollbar and its thumb */
+
+/* Set scrollbar width and color */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust as needed */
+  background-color: black; /* Set the background color of the scrollbar track */
+}
+
+/* Set scrollbar thumb color */
+::-webkit-scrollbar-thumb {
+  background-color: #333; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Add border radius for rounded appearance */
+}
+
+/* Set scrollbar track color */
+::-webkit-scrollbar-track {
+  background-color: black; /* Set the color of the scrollbar track */
+}
+
+/* For Firefox */
+/* You can also style the scrollbar in Firefox, but it requires a different set of properties */
+/* These properties may change as Firefox updates, so you may need to adjust them accordingly */
+/* For Firefox, these styles will only apply if the browser is configured to use the dark theme */
+
+/* Set scrollbar width */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #333 black;
+}
+
+/* Set scrollbar thumb color */
+html::-moz-scrollbar-thumb {
+  background-color: #333;
+}
+
+/* Set scrollbar track color */
+html::-moz-scrollbar-track {
+  background-color: black;
+}
